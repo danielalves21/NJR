@@ -1,0 +1,36 @@
+#include <stdio.h>
+  int main(){
+  //Declarando variaveis  	
+  char nome[200];
+  int idade;
+  int nota1;
+  int nota2;
+  int soma;
+  float mediaA;
+  //Solicitando dados 
+  printf("\nDigite seu nome:");
+  scanf("%s",&nome);
+  
+  printf("\nDigite sua idade:");
+  scanf("%i",&idade);
+  
+  printf("\nDigite sua primeira nota:");
+  scanf("%i",&nota1);
+  
+  printf("\nDigite sua segunda nota:");
+  scanf("%i",&nota2);
+  //Definido resultados
+  soma=nota1+nota2;
+  mediaA=soma/2;
+  //Exibindo resultados
+  printf("\n ==Exibindo resultados== \n");
+  printf("Nome: %s \n",nome);
+  printf("idade: %i \n",idade);
+  printf("Primeira Nota: %i \n",nota1);
+  printf("Segunda Nota: %i \n",nota2);
+  printf("Media: %f", mediaA);
+  
+  return 0;
+  
+  
+}
