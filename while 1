@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <locale.h>
+ 
+    int main(){
+    	setlocale(LC_ALL,"");
+        int contador = 0;
+        int nota; 
+        
+        do {
+		// comados a serem repetidos..
+		
+		   printf("Repentido...\n");
+		   
+		   contador = contador + 1;
+		   
+		   printf("\n Digite sua nota: \n");
+		   scanf("%i",&nota);
+		   fflush(stdin);
+		   
+	} while (nota < 0 || nota > 10 ) ;
+	
+	printf("a nota foi repetida %d vezes", contador );
+	
+	
+	return 0;
+        
+	}
