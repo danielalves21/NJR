@@ -1,0 +1,48 @@
+
+
+
+#include <stdio.h>
+#include <string.h>
+#include <stdbool.h>
+
+int main (){
+    
+	char loginCadastrado[200]= "biel";
+	char senhaCadastrada[200] = "12345";
+	char login[200];
+	char senha[200];
+	bool loginCorreto; 
+	bool senhaCorreta;
+	
+	
+	do{
+	
+	printf("\n SENAI \n :");
+	printf(" Digite seu login: ");
+	scanf("%s",&login);
+	
+	
+	printf("Digite sua senha:");
+	scanf("%s",&senha);
+	
+	loginCorreto = strcmp(loginCadastrado,login) == 0;
+	senhaCorreta = strcmp(senhaCadastrada,senha) == 0;
+	
+	if (loginCorreto == true){
+	    printf(" o login esta correto. \n");
+}
+
+	if (senhaCorreta) {
+		printf("A senha esta correta. \n");
+		
+	}
+	
+	// NAO OU NOT
+  } while (!loginCorreto ||!senhaCorreta);
+  
+  printf("\nAcessando o sistema...");
+  
+  return 0 ; 	
+}
+		
+	
