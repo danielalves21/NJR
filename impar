@@ -1,0 +1,34 @@
+#include <stdio.h>  
+#include <locale.h>  
+  
+       int main () {
+       setlocale(LC_ALL,"");
+       int numeros[6];
+	   int i;  
+	   int maiorValor, menorValor ;
+	   int impar, par;
+       
+
+   printf("\n== solicitar nota: ==\n");
+   for (i = 0; i < 6; i++) {
+
+   printf("digite a  %iª nota: \n ", i + 1);
+   scanf("%i", &numeros[i]);
+
+
+   if(numeros[i] % 2 == 0){
+         // par = par + 1
+            par++; 	
+   }else{
+  	   // impar = impar + 1
+  	   impar++;
+  	   
+  }}
+    
+    printf("Numeros impar: %i \n",impar );
+    printf("Numeros par: %i \n", par);
+	 
+    
+  return 0;
+ 
+}
